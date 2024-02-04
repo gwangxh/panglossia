@@ -23,7 +23,7 @@
   - （荀子集解，王先謙）
 12. [韓非子](https://ctext.org/hanfeizi)—選讀：二柄、解老、喻老、難勢、定法、五蠹、顯學。
   - （韓非子集解， 陳奇猷校注）
-  - 附讀：商君書：更法、說民、壹言。
+  - 附讀：[商君書](https://ctext.org/shang-jun-shu)：更法、說民、壹言。
 13. [管子](https://ctext.org/guanzi)—明法、法法。
 14. 司馬談論六家要旨。
 15. 春秋繁露—選讀：楚莊王、俞序、三代改制質文、仁義法、必仁且智、為人者天、五行之義、陰陽義、深察名號、五行義、人副天數。
@@ -77,11 +77,11 @@
 ## Chinese Philosophy Reading List (Topic-based)
 
 ### Confucianism
-1. 《周易》經傳。
-2. 春秋公羊傳何休解詁》
-3. 《禮記》
-4. 《論語》、《孟子》
-5. 《荀子》
+1. [《周易》經傳](https://ctext.org/book-of-changes)
+2. 《春秋公羊傳何休解詁》
+3. [《禮記》](https://ctext.org/liji)
+4. [《論語》](https://ctext.org/analects)、[《孟子》](https://ctext.org/mengzi)
+5. [《荀子》](https://ctext.org/xunzi)
 6. 《春秋繁露》
 7. 《張載集》
 8. 《周子全書》
@@ -96,12 +96,12 @@
 17. 戴震《原善》、《孟子字義疏證》
 
 ### Daoism
-1. 《老子》
-2. 《莊子》
-3. 《列子》
+1. [《老子》](https://ctext.org/dao-de-jing)
+2. [《莊子》](https://ctext.org/zhuangzi)
+3. [《列子》](https://ctext.org/liezi)
 4. 《黃帝四經》、《管子》四篇
-5. 《鶡冠子》
-6. 《淮南子》
+5. [《鶡冠子》](https://ctext.org/he-guan-zi)
+6. [《淮南子》](https://ctext.org/huainanzi)
 7. 嚴遵《道德指歸論》
 8. 王充《論衡》
 9. 王弼《老子注》、〈老子指略〉〈周易略例〉
@@ -127,11 +127,11 @@
 15. 《成實論》（同上，第32冊）
 
 ### Legalism, School of Names, and Mohism
-1. 《韓非子》
-2. 《商君書》、《慎子》、《申不害》
-3. 《管子》
+1. [《韓非子》](https://ctext.org/hanfeizi)
+2. [《商君書》](https://ctext.org/shang-jun-shu)、[《慎子》](https://ctext.org/shenzi)、[《申不害》](https://ctext.org/shen-bu-hai)
+3. [《管子》](https://ctext.org/guanzi)
   - 〈七法〉、〈版法〉、〈八觀〉、〈法禁〉、〈重令〉、〈制分〉、〈君臣〉上下、〈任法〉、〈明法〉、〈法法〉、〈正世〉、〈治國〉、〈版法解〉、〈明法解〉
-4. 《鄧析子》、《尹文子》
-5. 《公孫龍子》
+4. [《鄧析子》](https://ctext.org/deng-xi-zi)、[《尹文子》](https://ctext.org/yin-wen-zi)
+5. [《公孫龍子》](https://ctext.org/gongsunlongzi)
 6. 《墨經》
-7. 《墨子》
+7. [《墨子》](https://ctext.org/mozi)
