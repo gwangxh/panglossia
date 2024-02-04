@@ -4,6 +4,9 @@
 
 [The Sutra of Forty-two Sections (四十二章經)](四十二章經.html)
 
+## East Asian Texts
+[Companion to _Sources of East Asian Traditions_](SEAT-companion.md)
+
 ## Chinese Philosophy Reading List (General)
 (Taken from [Department of Philosophy, National Taiwan University](https://www.philo.ntu.edu.tw/?page_id=567))
 1. [周易](https://ctext.org/book-of-changes)—選讀：乾、坤、咸、恒、既濟、未濟六卦經傳暨繫辭傳。
