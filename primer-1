@@ -1,0 +1,195 @@
+<head>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: center;
+    }
+    p {
+      width: 75ch;
+      max-width: 100%;
+      margin: auto;
+    }
+    span {
+      display: block;
+    }
+    span.main-text{
+      font-size: larger;
+    }
+    span.comment{
+      font-variant: small-caps;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Texts from <cite>A Primer in Chinese Buddhist Writings (Vol. 1)</cite></h1>
+
+  <h2 id="section-1-1">1.1</h2>
+  <p>
+    <span class="main-text">竺佛念譯。</span>
+    <span class="translation">Translated by Zhu Fonian.</span>
+  </p>
+
+  <h2 id="section-1-2">1.2</h2>
+  <p>
+    <span class="main-text">人壽八萬歲。</span>
+    <span class="translation">People lived to the age of eighty thousand.</span>
+  </p>
+
+  <h2 id="section-1-3">1.3</h2>
+  <p>
+    <span class="main-text">迦葉佛坐尼拘律樹下。</span>
+    <span class="translation">Kāśyapabuddha sat beneath the nyagrodha tree.</span>
+  </p>
+
+  <h2 id="section-1-4">1.4</h2>
+  <p>
+    <span class="main-text">尸棄佛有二弟子。</span>
+    <span class="translation">Śikhinbuddha had two disciples.</span>
+  </p>
+
+  <h2 id="section-1-5">1.5</h2>
+  <p>
+    <span class="main-text">我父名淨飯。</span>
+    <span class="translation">My father's name was Pure Rice (Skt. Śuddhodana).</span>
+  </p>
+  
+  <h2 id="section-1-6">1.6</h2>
+  <p>
+    <span class="main-text">佛告比丘……</span>
+    <span class="translation">The Buddha said to the bhikṣus...</span>
+    <span class="comment">(We only know bhikṣu is plural from context)</span>
+  </p>
+  
+  <h2 id="section-1-7">1.7</h2>
+  <p>
+    <span class="main-text">此是常法。</span>
+    <span class="translation">This is the constant law.</span>
+  </p>
+  
+  <h2 id="section-1-8">1.8</h2>
+  <p>
+    <span class="main-text">如是我聞。</span>
+    <span class="translation">Thus have I heard.</span>
+  </p>
+  
+  <h2 id="section-1-9">1.9</h2>
+  <p>
+    <span class="main-text">諸比丘對...</span>
+    <span class="translation">The bhikṣus responded...</span>
+    <span class="comment">(You can also translated as "All of the bhikṣus responded," but in many cases the 諸 simply indicates plural.)</span>
+  </p>
+  
+  <h2 id="section-1-10">1.10</h2>
+  <p>
+    <span class="main-text">智慧增益。</span>
+    <span class="translation">Her insight increases.</span>
+    <span class="comment">(Unless you wish to indicate ambiguity, there is no need to place the subject [here: “Her”] in brackets).</span>
+  </p>
+  
+  <h2 id="section-2-1">2.1</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-2-2">2.2</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-2-3">2.3</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-2-4">2.4</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-2-5">2.5</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-2-6">2.6</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-2-7">2.7</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-1">3.1</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-2">3.2</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-3">3.3</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-4">3.4</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-5">3.5</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-6">3.6</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-7">3.7</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-7">3.8</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-9">3.9</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+  
+  <h2 id="section-3-10">3.10</h2>
+  <p>
+    <span class="main-text">X</span>
+    <span class="translation">X</span>
+  </p>
+</body>
