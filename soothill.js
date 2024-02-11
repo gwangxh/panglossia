@@ -24,47 +24,30 @@ function searchDictionary(xmlDoc, term) {
   return results;
 }
 
+// Function to display search results in the side panel
+function displayResults(results) {
+  const sidePanel = document.getElementById('side-panel');
+  sidePanel.innerHTML = ''; // Clear previous results
+  
+  if (results.length === 0) {
+    sidePanel.innerText = 'No results found.';
+  } else {
+    results.forEach(function(result) {
+      const resultDiv = document.createElement('div');
+      resultDiv.innerHTML = '<strong>' + result.form + '</strong>: ' + result.sense;
+      sidePanel.appendChild(resultDiv);
+    });
+  }
+}
+
 // Function to perform search when clicking on text
 document.querySelectorAll('.lookup').forEach(function(element) {
   element.addEventListener('click', function(event) {
     var searchTerm = element.textContent.trim();
     var xmlFileUrl = 'ddbc.soothill-hodous.tei.p5.xml'; // Replace 'path_to_your_xml_file' with the actual path
     loadXMLFile(xmlFileUrl, function(xmlDoc) {
-      var boundingRect = element.getBoundingClientRect();
-      var clickX = boundingRect.left + window.scrollX;
-      var clickY = boundingRect.top + window.scrollY + element.offsetHeight;
       var searchResults = searchDictionary(xmlDoc, searchTerm);
-      displayResults(searchResults, clickX, clickY, element); // Pass the clicked element to displayResults
+      displayResults(searchResults);
     });
   });
 });
-
-// Function to display search results in a popup
-function displayResults(results, clickX, clickY, element) {
-  var popup = document.createElement('div');
-  popup.className = 'popup';
-
-  // Position the popup near the clicked word
-  popup.style.top = (clickY) + 'px'; // Use clickY instead of rect.top
-  popup.style.left = (clickX) + 'px'; // Use clickX instead of rect.left
-  
-  if (results.length === 0) {
-    popup.innerText = 'No results found.';
-  } else {
-    results.forEach(function(result) {
-      var resultDiv = document.createElement('div');
-      resultDiv.innerHTML = '<strong>' + result.form + '</strong>: ' + result.sense;
-      popup.appendChild(resultDiv);
-    });
-  }
-
-  document.body.appendChild(popup);
-
-  // Close popup when clicking outside of it
-  document.addEventListener('click', function closePopup(event) {
-    if (!popup.contains(event.target) && event.target !== element) {
-      document.body.removeChild(popup);
-      document.removeEventListener('click', closePopup);
-    }
-  });
-}
