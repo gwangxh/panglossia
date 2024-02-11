@@ -39,17 +39,14 @@ function displayResults(results) {
   }
 }
 
-// Function to perform search
-function performSearch() {
-  var searchTerm = document.getElementById('searchTerm').value;
-  if (!searchTerm) {
-    alert("Please enter a search term.");
-    return;
-  }
-  
-  var xmlFileUrl = 'ddbc.soothill-hodous.tei.p5.xml'; // Replace 'path_to_your_xml_file' with the actual path
-  loadXMLFile(xmlFileUrl, function(xmlDoc) {
-    var searchResults = searchDictionary(xmlDoc, searchTerm);
-    displayResults(searchResults);
+// Function to perform search when clicking on text
+document.querySelectorAll('.dictionaryText').forEach(function(element) {
+  element.addEventListener('click', function() {
+    var searchTerm = element.textContent.trim();
+    var xmlFileUrl = 'ddbc.soothill-hodous.tei.p5.xml'; // Replace 'path_to_your_xml_file' with the actual path
+    loadXMLFile(xmlFileUrl, function(xmlDoc) {
+      var searchResults = searchDictionary(xmlDoc, searchTerm);
+      displayResults(searchResults);
+    });
   });
-}
+});
