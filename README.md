@@ -2,7 +2,7 @@
 
 ## Interlinear Texts
 
-[_The Sutra of Forty-two Sections_ (四十二章經)](四十二章經.html)
+[_The Sutra of Forty-two Sections_ (四十二章經)](forty-two.html)
 
 ## East Asian Texts
 [Companion to _Sources of East Asian Traditions_](SEAT-companion.md)
