@@ -40,7 +40,7 @@ function displayResults(results) {
 }
 
 // Function to perform search when clicking on text
-document.querySelectorAll('.dictionaryText').forEach(function(element) {
+document.querySelectorAll('.lookup').forEach(function(element) {
   element.addEventListener('click', function() {
     var searchTerm = element.textContent.trim();
     var xmlFileUrl = 'ddbc.soothill-hodous.tei.p5.xml'; // Replace 'path_to_your_xml_file' with the actual path
