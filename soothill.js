@@ -24,29 +24,42 @@ function searchDictionary(xmlDoc, term) {
   return results;
 }
 
-// Function to display search results
-function displayResults(results) {
-  var resultsContainer = document.getElementById('lookup-results');
-  resultsContainer.innerHTML = ''; // Clear previous results
-  if (results.length === 0) {
-    resultsContainer.innerHTML = 'No results found.';
-  } else {
-    results.forEach(function(result) {
-      var resultDiv = document.createElement('div');
-      resultDiv.innerHTML = '<strong>' + result.form + '</strong>: ' + result.sense;
-      resultsContainer.appendChild(resultDiv);
-    });
-  }
-}
-
 // Function to perform search when clicking on text
 document.querySelectorAll('.lookup').forEach(function(element) {
-  element.addEventListener('click', function() {
+  element.addEventListener('click', function(event) {
     var searchTerm = element.textContent.trim();
     var xmlFileUrl = 'ddbc.soothill-hodous.tei.p5.xml'; // Replace 'path_to_your_xml_file' with the actual path
     loadXMLFile(xmlFileUrl, function(xmlDoc) {
       var searchResults = searchDictionary(xmlDoc, searchTerm);
-      displayResults(searchResults);
+      displayResults(searchResults, event.clientX, event.clientY);
     });
   });
 });
+
+// Function to display search results in a popup
+function displayResults(results, clickX, clickY) {
+  var popup = document.createElement('div');
+  popup.className = 'popup';
+  popup.style.top = clickY + 'px';
+  popup.style.left = clickX + 'px';
+  
+  if (results.length === 0) {
+    popup.innerText = 'No results found.';
+  } else {
+    results.forEach(function(result) {
+      var resultDiv = document.createElement('div');
+      resultDiv.innerHTML = '<strong>' + result.form + '</strong>: ' + result.sense;
+      popup.appendChild(resultDiv);
+    });
+  }
+
+  document.body.appendChild(popup);
+
+  // Close popup when clicking outside of it
+  document.addEventListener('click', function closePopup(event) {
+    if (!popup.contains(event.target) && event.target !== element) {
+      document.body.removeChild(popup);
+      document.removeEventListener('click', closePopup);
+    }
+  });
+}
