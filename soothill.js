@@ -26,7 +26,7 @@ function searchDictionary(xmlDoc, term) {
 
 // Function to display search results
 function displayResults(results) {
-  var resultsContainer = document.getElementById('results');
+  var resultsContainer = document.getElementById('lookup-results');
   resultsContainer.innerHTML = ''; // Clear previous results
   if (results.length === 0) {
     resultsContainer.innerHTML = 'No results found.';
