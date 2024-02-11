@@ -17,7 +17,7 @@ function searchDictionary(xmlDoc, term) {
   entries.forEach(function(entry) {
     var form = entry.querySelector('form').textContent;
     var sense = entry.querySelector('sense').textContent;
-    if (form.toLowerCase().includes(term.toLowerCase()) || sense.toLowerCase().includes(term.toLowerCase())) {
+    if (form == term) {
       results.push({ form: form, sense: sense });
     }
   });
