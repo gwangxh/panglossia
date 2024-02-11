@@ -34,13 +34,13 @@ document.querySelectorAll('.lookup').forEach(function(element) {
       var clickX = boundingRect.left + window.scrollX;
       var clickY = boundingRect.top + window.scrollY + element.offsetHeight;
       var searchResults = searchDictionary(xmlDoc, searchTerm);
-      displayResults(searchResults, clickX, clickY);
+      displayResults(searchResults, clickX, clickY, element); // Pass the clicked element to displayResults
     });
   });
 });
 
 // Function to display search results in a popup
-function displayResults(results, clickX, clickY) {
+function displayResults(results, clickX, clickY, element) {
   var popup = document.createElement('div');
   popup.className = 'popup';
 
@@ -75,4 +75,3 @@ function displayResults(results, clickX, clickY) {
     }
   });
 }
-
