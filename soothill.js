@@ -63,6 +63,7 @@ function displayResults(results, clickX, clickY) {
       document.removeEventListener('click', closePopup);
     }
   });
+}
 
 /*
 // Function to load external XML file
