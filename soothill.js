@@ -38,6 +38,7 @@ document.querySelectorAll('.lookup').forEach(function(element) {
 
 // Function to display search results in a popup
 function displayResults(results, clickX, clickY) {
+  console.log("new");
   var popup = document.createElement('div');
   popup.className = 'popup';
   popup.style.top = clickY + 'px';
