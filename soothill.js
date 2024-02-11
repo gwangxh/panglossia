@@ -26,7 +26,7 @@ function searchDictionary(xmlDoc, term) {
 
 // Function to display search results in the side panel
 function displayResults(results) {
-  const sidePanel = document.getElementById('side-panel');
+  const sidePanel = document.getElementById('lookup-result-panel');
   sidePanel.innerHTML = ''; // Clear previous results
   
   if (results.length === 0) {
