@@ -42,10 +42,15 @@
       font-variant: small-caps;
     }
   </style>
+  <script src="soothill.js" defer></script>
 </head>
 
 <body>
   <h1>The <cite><span class="sanskrit-normal">Sutra</span> of Forty-two Sections</cite> 《四十二章經》</h1>
+
+  <input type="text" id="searchTerm" placeholder="Enter search term">
+  <button onclick="performSearch()">Search</button>
+  <div id="results"></div>
 
   <h2 id="introduction">Introduction</h2>
   <p>
