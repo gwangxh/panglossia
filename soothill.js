@@ -43,8 +43,17 @@ document.querySelectorAll('.lookup').forEach(function(element) {
 function displayResults(results, clickX, clickY) {
   var popup = document.createElement('div');
   popup.className = 'popup';
-  popup.style.top = clickY + 'px';
-  popup.style.left = clickX + 'px';
+
+  // Calculate position relative to the viewport
+  var rect = element.getBoundingClientRect();
+
+  // Adjust for scrolling
+  var topOffset = window.pageYOffset || document.documentElement.scrollTop;
+  var leftOffset = window.pageXOffset || document.documentElement.scrollLeft;
+
+  // Position the popup near the clicked word
+  popup.style.top = (rect.top + topOffset + rect.height) + 'px';
+  popup.style.left = (rect.left + leftOffset) + 'px';
   
   if (results.length === 0) {
     popup.innerText = 'No results found.';
@@ -66,3 +75,4 @@ function displayResults(results, clickX, clickY) {
     }
   });
 }
+
