@@ -34,6 +34,8 @@ document.querySelectorAll('.lookup').forEach(function(element) {
       var clickX = boundingRect.left + window.scrollX;
       var clickY = boundingRect.top + window.scrollY + element.offsetHeight;
       var searchResults = searchDictionary(xmlDoc, searchTerm);
+      console.log("1");
+      console.log(element);
       displayResults(searchResults, clickX, clickY, element); // Pass the clicked element to displayResults
     });
   });
@@ -41,11 +43,15 @@ document.querySelectorAll('.lookup').forEach(function(element) {
 
 // Function to display search results in a popup
 function displayResults(results, clickX, clickY, element) {
+  console.log("2");
+  console.log(element);
   var popup = document.createElement('div');
   popup.className = 'popup';
 
   // Calculate position relative to the viewport
   var rect = element.getBoundingClientRect();
+  console.log("3");
+  console.log(element);
 
   // Adjust for scrolling
   var topOffset = window.pageYOffset || document.documentElement.scrollTop;
