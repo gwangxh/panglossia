@@ -42,6 +42,13 @@
     span.lookup {
       text-decoration: underline dotted;
     }
+    #side-panel {
+      float: right;
+      width: 30%; /* Adjust as needed */
+      background-color: #f0f0f0;
+      border-left: 1px solid #ccc;
+      padding: 10px;
+    }
   </style>
   <script src="soothill.js" defer></script>
 </head>
@@ -49,7 +56,9 @@
 <body>
   <h1>The <cite><span class="sanskrit-normal">Sutra</span> of Forty-two Sections</cite> 《四十二章經》</h1>
 
-  <div id="lookup-results"></div>
+  <div id="lookup-result-panel">
+        <!-- Search results will be displayed here -->
+  </div>
 
   <h2 id="introduction">Introduction</h2>
   <p>
