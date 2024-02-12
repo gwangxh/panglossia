@@ -34,17 +34,26 @@ document.querySelectorAll('.lookup').forEach(function(element) {
       var clickX = boundingRect.left + window.scrollX;
       var clickY = boundingRect.top + window.scrollY + element.offsetHeight;
       var searchResults = searchDictionary(xmlDoc, searchTerm);
-      displayResults(searchResults, clickX, clickY);
+      displayResults(searchResults, clickX, clickY, element); // Pass the clicked element to displayResults
     });
   });
 });
 
 // Function to display search results in a popup
-function displayResults(results, clickX, clickY) {
+function displayResults(results, clickX, clickY, element) {
   var popup = document.createElement('div');
   popup.className = 'popup';
-  popup.style.top = clickY + 'px';
-  popup.style.left = clickX + 'px';
+
+  // Calculate position relative to the viewport
+  var rect = element.getBoundingClientRect();
+
+  // Adjust for scrolling
+  var topOffset = window.pageYOffset || document.documentElement.scrollTop;
+  var leftOffset = window.pageXOffset || document.documentElement.scrollLeft;
+
+  // Position the popup near the clicked word
+  popup.style.top = (rect.top + topOffset + rect.height) + 'px';
+  popup.style.left = (rect.left + leftOffset) + 'px';
   
   if (results.length === 0) {
     popup.innerText = 'No results found.';
