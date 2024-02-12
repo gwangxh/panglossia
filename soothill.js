@@ -30,15 +30,17 @@ document.querySelectorAll('.lookup').forEach(function(element) {
     var searchTerm = element.textContent.trim();
     var xmlFileUrl = 'ddbc.soothill-hodous.tei.p5.xml'; // Replace 'path_to_your_xml_file' with the actual path
     loadXMLFile(xmlFileUrl, function(xmlDoc) {
+      var boundingRect = element.getBoundingClientRect();
+      var clickX = boundingRect.left + window.scrollX;
+      var clickY = boundingRect.top + window.scrollY + element.offsetHeight;
       var searchResults = searchDictionary(xmlDoc, searchTerm);
-      displayResults(searchResults, event.clientX, event.clientY);
+      displayResults(searchResults, clickX, clickY);
     });
   });
 });
 
 // Function to display search results in a popup
 function displayResults(results, clickX, clickY) {
-  console.log("new");
   var popup = document.createElement('div');
   popup.className = 'popup';
   popup.style.top = clickY + 'px';
@@ -64,6 +66,7 @@ function displayResults(results, clickX, clickY) {
     }
   });
 }
+
 
 /*
 // Function to load external XML file
