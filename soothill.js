@@ -1,3 +1,5 @@
+/* Imperfect code to display dictionary results in a popup window
+
 // Function to load external XML file
 function loadXMLFile(url, callback) {
   var xhr = new XMLHttpRequest();
@@ -75,9 +77,9 @@ function displayResults(results, clickX, clickY, element) {
     }
   });
 }
+*/
 
 
-/*
 // Function to load external XML file
 function loadXMLFile(url, callback) {
   var xhr = new XMLHttpRequest();
@@ -131,4 +133,3 @@ document.querySelectorAll('.lookup').forEach(function(element) {
     });
   });
 });
-*/
