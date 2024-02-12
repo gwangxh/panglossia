@@ -131,5 +131,16 @@ document.querySelectorAll('.lookup').forEach(function(element) {
       var searchResults = searchDictionary(xmlDoc, searchTerm);
       displayResults(searchResults);
     });
+    
+    // Prevent event bubbling to document body
+    event.stopPropagation();
   });
+});
+
+// Function to clear results when clicking away
+document.body.addEventListener('mousedown', function(event) {
+  const sidePanel = document.getElementById('lookup-result-panel');
+  if (!event.target.closest('.lookup') && event.target !== sidePanel) {
+    sidePanel.innerHTML = ''; // Clear previous results
+  }
 });
