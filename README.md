@@ -53,7 +53,7 @@
 15. 蘇辛詞
 
 ## Chinese Philosophy Reading List (General)
-(List from [Department of Philosophy, National Taiwan University](https://www.philo.ntu.edu.tw/?page_id=567))
+(List from [Department of Philosophy, National Taiwan University](https://www.philo.ntu.edu.tw/wp-content/uploads/2018/12/blist-eph-th.doc))
 1. [周易](https://ctext.org/book-of-changes)—選讀：乾、坤、咸、恒、既濟、未濟六卦經傳暨繫辭傳。
   - （以重刊宋本周易注疏為主，參稽孔穎達周易正義八論；程伊川易傳序）
 2. [尚書](https://ctext.org/shang-shu)—選讀：堯典、皋陶謨、洪範。
@@ -123,7 +123,7 @@
 附註：以上書單所列版本僅供參考。
 
 ## Chinese Philosophy Reading List (Topic-based)
-
+(List from [Department of Philosophy, National Taiwan University](https://www.philo.ntu.edu.tw/wp-content/uploads/2018/12/%E6%B1%BA%E8%AD%B0%E9%99%84%E4%BB%B6%E5%9B%9B%E8%B3%87%E6%A0%BC%E8%80%83%E8%A9%A6%EF%BC%9C%E6%9D%B1%E6%96%B9%E5%93%B2%E5%AD%B8%E5%B0%88%E6%9B%B8%EF%BC%9E%E9%81%B8%E8%80%83%E6%9B%B8%E5%96%AE.doc))
 ### Confucianism
 1. [《周易》經傳](https://ctext.org/book-of-changes)
 2. 《春秋公羊傳何休解詁》
