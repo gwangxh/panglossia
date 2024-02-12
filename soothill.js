@@ -119,6 +119,7 @@ function displayResults(results) {
       resultDiv.innerHTML = '<strong>' + result.form + '</strong>: ' + result.sense;
       sidePanel.appendChild(resultDiv);
     });
+    sidePanel.classList.add('has-content'); // Add class to indicate content is present
   }
 }
 
@@ -140,7 +141,10 @@ document.querySelectorAll('.lookup').forEach(function(element) {
 // Function to clear results when clicking away
 document.body.addEventListener('mousedown', function(event) {
   const sidePanel = document.getElementById('lookup-result-panel');
-  if (!event.target.closest('.lookup') && !event.target.closest('#lookup-result-panel')) {
+  const hasResults = sidePanel.querySelector('div') !== null; // Check if there are any search results displayed
+  
+  if (!event.target.closest('.lookup') && !event.target.closest('#lookup-result-panel') && !hasResults) {
     sidePanel.innerHTML = ''; // Clear previous results
+    sidePanel.classList.remove('has-content'); // Remove class indicating content is present
   }
 });
