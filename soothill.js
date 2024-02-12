@@ -140,7 +140,7 @@ document.querySelectorAll('.lookup').forEach(function(element) {
 // Function to clear results when clicking away
 document.body.addEventListener('mousedown', function(event) {
   const sidePanel = document.getElementById('lookup-result-panel');
-  if (!event.target.closest('.lookup') && event.target !== sidePanel) {
+  if (!event.target.closest('.lookup') && !event.target.closest('#lookup-result-panel')) {
     sidePanel.innerHTML = ''; // Clear previous results
   }
 });
