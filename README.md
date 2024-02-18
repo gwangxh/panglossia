@@ -1,13 +1,20 @@
 # panglossia
 
-## Interlinear Texts
+## Open Classical Chinese Courses
+- [_Chinese Philosophical Texts_](https://chinesetexts.stanford.edu/) by Mark Lewis
+- _Introduction to Literary Chinese_ by Robert Eno ([Preface](https://hdl.handle.net/2022/23480), [Volume 1](https://hdl.handle.net/2022/23481), [Volume 2](https://hdl.handle.net/2022/23487))
+- [A Primer in Chinese Buddhist Writings](https://religiousstudies.stanford.edu/primer-chinese-buddhist-writings) by John Kieschnick
+  - Interlinear version by me: [Volume 1](primer-1.html)
+
+
+## Chinese-English Interlinear Texts
 
 [_The Sutra of Forty-two Sections_ (四十二章經)](forty-two.html)
 
-## East Asian Texts
+## Classical Chinese Texts
 [Companion to _Sources of East Asian Traditions_](SEAT-companion.md)
 
-## Chinese Classics
+## List of Chinese Classics
 (List from [Department of Chinese Literature, National Taiwan University](http://www.cl.ntu.edu.tw/uploads/root/%E8%AA%B2%E7%A8%8B%E8%B3%87%E8%A8%8A/%E5%8D%9A%E5%A3%AB%E7%8F%AD%E5%AD%B8%E4%BD%8D%E8%AB%96%E6%96%87%E9%A0%90%E5%AF%A9%E8%BE%A6%E6%B3%951041230%E7%B3%BB%E5%8B%99%E6%9C%83%E8%AD%B0%E9%80%9A%E9%81%8E.pdf))
 ### 經
 1. 四書 ([論語](https://ctext.org/analects), [孟子](https://ctext.org/mengzi), [大學](https://ctext.org/liji/da-xue), [中庸](https://ctext.org/liji/zhong-yong))
