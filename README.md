@@ -7,7 +7,7 @@
   - Interlinear version by me: [Volume 1](primer-1.html)
 
 
-## Chinese-English Interlinear Texts
+## Classical Chinese-English Interlinear Texts
 
 [_The Sutra of Forty-two Sections_ (四十二章經)](forty-two.html)
 
