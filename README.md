@@ -86,7 +86,7 @@
 16. [論衡](https://ctext.org/lunheng)—選讀：命義、命祿、率性、本性、物勢、自然、齊世、實知、知實。
 17. 魏晉思想史料集—選讀：王弼：老子指略、周易略例、[老子第1、38、40章注](https://ctext.org/dao-de-zhen-jing-zhu)；郭象：逍遙遊注、齊物論注；抱朴子：詰鮑篇；裴頠：崇有論；范縝：神滅論；嵇康：養生論，聲無哀樂論；阮籍：達莊論。
 ### 中國佛學選集：
-18. 龍樹著，鳩摩羅什譯，《中論》卷4〈觀四諦品〉
+18. 龍樹著，鳩摩羅什譯，[《中論》卷4〈觀四諦品〉](https://cbetaonline.dila.edu.tw/zh/T1564_004)
   - （大正新修大藏經，卷30，pp.32b~34c）
 19. 世親著，玄奘譯，《攝大乘論本》〈所知依分〉、〈所知相分〉
   - （同上，卷31，pp.133b~141a）
@@ -99,7 +99,7 @@
 23. 曇無讖譯，《大般涅槃經》〈師子吼菩薩品〉（1~2）
   - （同上，卷12，pp.522b~535b）
 24. 《大乘起信論》（同上，卷32，pp.575b~583b）
-25. 僧肇，《肇論》〈物不遷論〉、〈不真空論〉
+25. 僧肇，[《肇論》](https://cbetaonline.dila.edu.tw/zh/T1858)〈物不遷論〉、〈不真空論〉
   - （同上，卷45，pp.151a~153a）
 26. 智顗，《妙法蓮華經玄義》卷1-上、卷2-上、卷10-上
   - （同上，卷33，pp.682b~683c，pp.693a~696a，pp.800a~807b）
@@ -165,21 +165,21 @@
 12. 成玄英《南華真經注疏》
 
 ### Buddhism
-1. 僧肇，《肇論》（大正藏，第45冊）
-2. 《妙法蓮華經》（同上，第9冊）+智顗，《妙法蓮華經玄義》（同上，第33冊）
-3. 《大方廣佛華嚴經》（60卷本）（同上，第9冊）+法藏，《華嚴金師子章》（同上，第45冊）
-4. 法海，《六祖大師法寶壇經》（同上，第48冊）+宗密，《禪源諸詮集都序》（同上，第48冊）
-5. 《大乘起信論》（同上，第32冊）
-6. 《攝大乘論》（同上，第31冊）
-7. 《大般涅槃經》（同上，第12冊）
-8. 《成唯識論》（同上，第31冊）
-9. 《寶性論》（同上，第31冊）
-10. 《摩訶止觀》（同上，第46冊）
-11. 《佛性論》（同上，第31冊）
-12. 《雜阿含經》（同上，第2冊）
-13. 《小品般若經》（同上，第8冊）+《大品般若經》（同上，第8冊）
-14. 《維摩詰所說經》（同上，第14冊）
-15. 《成實論》（同上，第32冊）
+1. 僧肇，[《肇論》](https://cbetaonline.dila.edu.tw/zh/T1858)（大正藏，第45冊）
+2. [《妙法蓮華經》](https://cbetaonline.dila.edu.tw/T0262)（同上，第9冊）+智顗，[《妙法蓮華經玄義》](https://cbetaonline.dila.edu.tw/zh/T1716)（同上，第33冊）
+3. [《大方廣佛華嚴經》](https://cbetaonline.dila.edu.tw/T0279)（60卷本）（同上，第9冊）+法藏，[《華嚴金師子章》](https://cbetaonline.dila.edu.tw/zh/T1881)（同上，第45冊）
+4. 法海，[《六祖大師法寶壇經》](https://cbetaonline.dila.edu.tw/zh/T2008)（同上，第48冊）+宗密，[《禪源諸詮集都序》](https://cbetaonline.dila.edu.tw/zh/T2015)（同上，第48冊）
+5. [《大乘起信論》](https://cbetaonline.dila.edu.tw/zh/T1666)（同上，第32冊）
+6. [《攝大乘論》](https://cbetaonline.dila.edu.tw/T1594)（同上，第31冊）
+7. [《大般涅槃經》](https://cbetaonline.dila.edu.tw/zh/T0374)（同上，第12冊）
+8. [《成唯識論》](https://cbetaonline.dila.edu.tw/T1585)（同上，第31冊）
+9. [《寶性論》](https://cbetaonline.dila.edu.tw/zh/T1611)（同上，第31冊）
+10. [《摩訶止觀》](https://cbetaonline.dila.edu.tw/zh/T1911)（同上，第46冊）
+11. [《佛性論》](https://cbetaonline.dila.edu.tw/zh/T1610)（同上，第31冊）
+12. [《雜阿含經》](https://cbetaonline.dila.edu.tw/zh/T0099)（同上，第2冊）
+13. [《小品般若經》](https://cbetaonline.dila.edu.tw/T0227)（同上，第8冊）+[《大品般若經》](https://cbetaonline.dila.edu.tw/zh/T0220)（同上，第5-7冊）
+14. [《維摩詰所說經》](https://cbetaonline.dila.edu.tw/T0475)（同上，第14冊）
+15. [《成實論》](https://cbetaonline.dila.edu.tw/zh/T1646)（同上，第32冊）
 
 ### Legalism, School of Names, and Mohism
 1. [《韓非子》](https://ctext.org/hanfeizi)
