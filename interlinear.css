@@ -1,0 +1,59 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+p {
+  width: 75ch;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+span.main-text,
+span.translation,
+span.comment {
+  display: block;
+}
+span.main-text{
+  font-size: larger;
+}
+span.comment {
+  font-variant: small-caps;
+}
+sup.note {
+  line-height: 0;
+}
+div.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#credits {
+  font-variant: small-caps;
+}
+span.sanskrit-italics {
+  font-style: italic;
+}
+span.sanskrit-normal {
+  font-variant: small-caps;
+}
+span.lookup {
+  text-decoration: underline dotted;
+}
+#lookup-result-panel {
+  float: left;
+  position: fixed;
+  top: 30%;
+  max-height: 30%;
+  width: 30%; /* Adjust as needed */
+  overflow-y: auto;
+  background-color: transparent;
+  border-left: 1px solid #ccc;
+  padding: 10px;
+}
+#lookup-result-panel.has-content {
+  background-color: #f0f0f0; /* Opaque background when content is present */
+}
