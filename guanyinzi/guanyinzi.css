@@ -59,3 +59,6 @@ span.lookup {
 #lookup-result-panel.has-content {
   background-color: #f0f0f0; /* Opaque background when content is present */
 }
+#filter-input {
+    width: 50%;
+}
