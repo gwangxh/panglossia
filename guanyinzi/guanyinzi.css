@@ -20,6 +20,7 @@ span.commentary {
 }
 span.main-text{
   font-size: larger;
+  font-weight: bold;
 }
 span.comment {
   font-variant: small-caps;
