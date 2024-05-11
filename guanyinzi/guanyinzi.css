@@ -6,7 +6,8 @@ h5,
 h6 {
   text-align: center;
 }
-p {
+p,
+hr {
   width: 75ch;
   max-width: 100%;
   margin: auto;
@@ -24,6 +25,7 @@ span.main-text{
 }
 span.comment {
   font-variant: small-caps;
+  font-style: italic;
 }
 sup.note {
   line-height: 0;
@@ -35,6 +37,7 @@ div.audio-container {
 }
 #credits {
   font-variant: small-caps;
+  text-align: center;
 }
 span.sanskrit-italics {
   font-style: italic;
