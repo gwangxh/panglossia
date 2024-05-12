@@ -1,4 +1,4 @@
-document.getElementById('filter-button').addEventListener('click', function() {
+function applyFilter() {
     const searchTerm = document.getElementById('filter-input').value.toLowerCase();
     const filterUnits = document.querySelectorAll('.filter-unit');
 
@@ -10,6 +10,33 @@ document.getElementById('filter-button').addEventListener('click', function() {
             unit.style.display = 'none'; // Hides the div
         }
     });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const filterText = params.get('filter'); // Assuming the URL parameter is named 'filter'
+
+    if (filterText) {
+        const decodedText = decodeURIComponent(filterText);
+        document.getElementById('filter-input').value = decodedText;
+        applyFilter(); // Run filter function after setting input
+        document.getElementById('document-title').innerHTML += `</br>(Selected passages with “${decodedText}”)`;
+        document.getElementById('current-filter').innerHTML = `<b>Filtering for: "${decodedText}" <button id="cancel-filter">✖</a></button>`;
+        document.getElementById('cancel-filter').addEventListener('click', function() {
+            // This will reload the page to the base URL without any query parameters.
+            window.location.href = window.location.pathname;
+        });
+    }
+});
+
+// Commented out filtering without page reload
+// document.getElementById('filter-button').addEventListener('click', applyFilter);
+
+document.getElementById('filter-button').addEventListener('click', function() {
+    const input = document.getElementById('filter-input');
+    const filterValue = encodeURIComponent(input.value);
+    // Construct a new URL with the filter parameter
+    window.location.href = `${window.location.pathname}?filter=${filterValue}`;
 });
 
 document.getElementById('highlight-button').addEventListener('click', function() {
