@@ -29,6 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.getElementById('filter-input').addEventListener('keydown', function(event) {
+    // Check if the Enter key is pressed
+    if (event.keyCode === 13) {
+        // Trigger click event of the filter button
+        document.getElementById('filter-button').click();
+    }
+});
+
 // Commented out filtering without page reload
 // document.getElementById('filter-button').addEventListener('click', applyFilter);
 
