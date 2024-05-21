@@ -1,5 +1,8 @@
 # panglossia
 
+## Official Dynastic Histories
+[chistory Project](chistory.md)
+
 ## Open Classical Chinese Courses
 - [_Chinese Philosophical Texts_](https://chinesetexts.stanford.edu/) by Mark Lewis
 - _Introduction to Literary Chinese_ by Robert Eno ([Preface](https://hdl.handle.net/2022/23480), [Volume 1](https://hdl.handle.net/2022/23481), [Volume 2](https://hdl.handle.net/2022/23487))
