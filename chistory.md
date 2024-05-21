@@ -1,1 +1,1 @@
-[*History of Ming* 《明史》](Mingshi/Mingshi.md)
+[*History of Ming* 《明史》](chistory/Mingshi.md)
