@@ -6,6 +6,8 @@
             currentURL = window.location.href;
             lowerCaseURL = currentURL.toLowerCase();
             if (currentURL != lowerCaseURL) {
+                // Prevent the page from rendering and redirect immediately
+                document.write('<style>body{display:none;}</style>');
                 location.replace(lowerCaseURL);
             }
         };
