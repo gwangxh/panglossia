@@ -6,19 +6,25 @@
     <title>404 Not Found</title>
     <script>
         window.onload = () => {
-            currentURL = window.location.href;
-            lowerCaseURL = currentURL.toLowerCase();
+            let currentURL = window.location.href;
+            let lowerCaseURL = currentURL.toLowerCase();
             if (currentURL != lowerCaseURL) {
+                // Redirect immediately if the URL is not in lowercase
                 location.replace(lowerCaseURL);
-            }
-            else {
-                document.write('<style>body {font-family: Arial, sans-serif;background-color: #f4f4f4;color: #333;text-align: center;padding: 50px;}</style>');
+            } else {
+                // Make the body visible if no redirection is needed
+                document.body.style.visibility = 'visible';
             }
         };
     </script>
     <style>
         body {
-            display: none;
+            visibility: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
         }
         h1 {
             font-size: 50px;
