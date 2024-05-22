@@ -9,19 +9,16 @@
             currentURL = window.location.href;
             lowerCaseURL = currentURL.toLowerCase();
             if (currentURL != lowerCaseURL) {
-                // Prevent the page from rendering and redirect immediately
-                document.write('<style>body{display:none;}</style>');
                 location.replace(lowerCaseURL);
+            }
+            else {
+                document.write('<style>body {font-family: Arial, sans-serif;background-color: #f4f4f4;color: #333;text-align: center;padding: 50px;}</style>');
             }
         };
     </script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
+            display: none;
         }
         h1 {
             font-size: 50px;
