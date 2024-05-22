@@ -2,7 +2,7 @@
 
 ## Official Dynastic Histories
 [chistory Project](chistory.md)
-- [*History of Ming* 《明史》](chistory/Mingshi.md)
+- [*History of Ming* 《明史》](chistory/mingshi.md)
 
 ## Open Classical Chinese Courses
 - [_Chinese Philosophical Texts_](https://chinesetexts.stanford.edu/) by Mark Lewis
