@@ -9,15 +9,43 @@
 <body>
     <div class="container">
         <h1>Sanskrit Paradigms Memorizer</h1>
-        <select id="paradigmSelector">
-            <option value="gaja">short -a masculine (gaja)</option>
-            <option value="phala">short -a neuter (phala)</option>
-            <!-- Add more paradigms here -->
-        </select>
         <div id="paradigmDisplay">
             <p id="paradigmItem"></p>
         </div>
+        <button id="previousButton">Back</button>
         <button id="nextButton">Next</button>
+        <div id="paradigmSelector">
+            <h2>Nominals</h2>
+            <label>
+                <input type="radio" name="paradigm" value="gaja" checked>
+                Nominal stems in a – masculine (gaja)
+            </label><br>
+            <label>
+                <input type="radio" name="paradigm" value="phala">
+                Nominal stems in a – neuter (phala)
+            </label><br>
+            <label>
+                <input type="radio" name="paradigm" value="senā">
+                Nominal stems in ā – feminine (senā)
+            </label><br>
+            <label>
+                <input type="radio" name="paradigm" value="muni">
+                Nominal stems in i – masculine (muni)
+            </label><br>
+            <label>
+                <input type="radio" name="paradigm" value="śuci">
+                Nominal stems in i – neuter (śuci)
+            </label><br>
+            <label>
+                <input type="radio" name="paradigm" value="śruti">
+                Nominals stems in i – feminine (śruti)
+            </label><br>
+            <label>
+                <input type="radio" name="paradigm" value="____">
+                Nominal stems in ā – feminine (____)
+            </label>
+            <!-- Add more paradigms here -->
+        </div>
     </div>
     <script src="scripts.js"></script>
 </body>

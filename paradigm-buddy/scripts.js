@@ -1,35 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const paradigms = {
-        gaja: [
-            ["gajaḥ", "gajau", "gajāḥ"],
-            ["gajam", "gajau", "gajān"],
-            ["gajena", "gajābhyām", "gajaiḥ"],
-            ["gajāya", "gajābhyām", "gajebhyaḥ"],
-            ["gajāt", "gajābhyām", "gajebhyaḥ"],
-            ["gajasya", "gajayoḥ", "gajānām"],
-            ["gaje", "gajayoḥ", "gajeṣu"],
-            ["gaja", "gajau", "gajāḥ"]
-        ],
-        phala: [
-            ["phalam", "phale", "phalāni"],
-            ["phalam", "phale", "phalāni"],
-            ["phalena", "phalābhyām", "phalaiḥ"],
-            ["phalāya", "phalābhyām", "phalebhyaḥ"],
-            ["phalāt", "phalābhyām", "phalebhyaḥ"],
-            ["phalasya", "phalayoḥ", "phalānām"],
-            ["phale", "phalayoḥ", "phaleṣu"],
-            ["phala", "phale", "phalāni"]
-        ]
-        // Add more paradigms here
-    };
-
     const paradigmSelector = document.getElementById('paradigmSelector');
     const paradigmItem = document.getElementById('paradigmItem');
     const nextButton = document.getElementById('nextButton');
-
-    let currentParadigm = paradigms[paradigmSelector.value];
+    const previousButton = document.getElementById('previousButton');
+    
+    let paradigms = {};
+    let currentParadigm = [];
     let rowIndex = 0;
     let colIndex = 0;
+
+    fetch('paradigms.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            paradigms = data;
+            const selectedParadigm = document.querySelector('input[name="paradigm"]:checked').value;
+            currentParadigm = paradigms[selectedParadigm];
+            updateParadigmItem();
+        })
+        .catch(error => console.error('Error loading paradigms:', error));
 
     function updateParadigmItem() {
         if (rowIndex < currentParadigm.length && colIndex < currentParadigm[rowIndex].length) {
@@ -40,13 +33,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     paradigmSelector.addEventListener('change', () => {
-        currentParadigm = paradigms[paradigmSelector.value];
+        const selectedParadigm = document.querySelector('input[name="paradigm"]:checked').value;
+        currentParadigm = paradigms[selectedParadigm];
         rowIndex = 0;
         colIndex = 0;
         updateParadigmItem();
     });
 
     nextButton.addEventListener('click', () => {
+        goToNextItem();
+    });
+
+    previousButton.addEventListener('click', () => {
+        goToPreviousItem();
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.code === 'Space' && !event.shiftKey) {
+            event.preventDefault();
+            goToNextItem();
+        } else if (event.code === 'Space' && event.shiftKey) {
+            event.preventDefault();
+            goToPreviousItem();
+        }
+    });
+
+    function goToNextItem() {
         colIndex++;
         if (colIndex >= currentParadigm[rowIndex].length) {
             colIndex = 0;
@@ -57,8 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             paradigmItem.textContent = "End of Paradigm";
         }
-    });
+    }
 
-    // Initialize with the first item of the default paradigm
-    updateParadigmItem();
+    function goToPreviousItem() {
+        if (colIndex > 0) {
+            colIndex--;
+        } else if (rowIndex > 0) {
+            rowIndex--;
+            colIndex = currentParadigm[rowIndex].length - 1;
+        }
+        updateParadigmItem();
+    }
 });
