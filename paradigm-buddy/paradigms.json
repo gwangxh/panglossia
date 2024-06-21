@@ -18,5 +18,45 @@
         ["phalasya", "phalayoḥ", "phalānām"],
         ["phale", "phalayoḥ", "phaleṣu"],
         ["phala", "phale", "phalāni"]
+    ],
+    "senā": [
+        ["senā", "sene", "senāḥ"],
+        ["senām", "sene", "senāḥ"],
+        ["senayā", "senābhyām", "senābhiḥ"],
+        ["senāyai", "senābhyām", "senābhyaḥ"],
+        ["senāyāḥ", "senābhyām", "senābhyaḥ"],
+        ["senāyāḥ", "senayoḥ", "senānām"],
+        ["senāyām", "senayoḥ", "senāsu"],
+        ["sene", "sene", "senāḥ"]
+    ],
+    "muni": [
+        ["muniḥ", "munī", "munayaḥ"],
+        ["munim", "munī", "munīn"],
+        ["muninā", "munibhyām", "munibhiḥ"],
+        ["munaye", "munibhyām", "munibhyaḥ"],
+        ["muneḥ", "munibhyām", "munibhyaḥ"],
+        ["muneḥ", "munyoḥ", "munīnām"],
+        ["munau", "munyoḥ", "muniṣu"],
+        ["mune", "munī", "munayaḥ"]
+    ],
+    "śuci": [
+        ["śuci", "śucinī", "śucīni"],
+        ["śuci", "śucinī", "śucīni"],
+        ["śucinā", "śucibhyām", "śucibhiḥ"],
+        ["śucine", "śucibhyām", "śucibhyaḥ"],
+        ["śucinaḥ", "śucibhyām", "śucibhyaḥ"],
+        ["śucinaḥ", "śucinoḥ", "śucīnām"],
+        ["śucini", "śucinoḥ", "śuciṣu"],
+        ["śuci", "śucinī", "śucīni"]
+    ],
+    "śruti": [
+        ["śrutiḥ", "śrutī", "śrutayaḥ"],
+        ["śrutim", "śrutī", "śrutīḥ"],
+        ["śrutyā", "śrutibhyām", "śrutibhiḥ"],
+        ["śrut-yai/-aye", "śrutibhyām", "śrutibhyaḥ"],
+        ["śrut-yāḥ/-eḥ", "śrutibhyām", "śrutibhyaḥ"],
+        ["śrut-yāḥ/-eḥ", "śrutyoḥ", "śrutīnām"],
+        ["śrut-yām/-au", "śrutyoḥ", "śrutiṣu"],
+        ["śrute", "śrutī", "śrutayaḥ"]
     ]
 }
