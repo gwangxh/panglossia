@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateParadigmItem() {
-        const selectedScript = scriptSelect.value;
         if (rowIndex < currentParadigm.length && colIndex < currentParadigm[rowIndex].length) {
             let item = currentParadigm[rowIndex][colIndex];
             if (rowIndex === currentParadigm.length - 1 && colIndex === currentParadigm[rowIndex].length - 1) {
@@ -43,8 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (resetSymbol) {
                 resetSymbol.addEventListener('click', resetCounter);
             }
+        } else {
+            paradigmItem.textContent = "End of Paradigm";
         }
-    }
+    }    
     
     function resetCounter() {
         rowIndex = 0;
@@ -79,8 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (event.code === 'Space' && event.shiftKey) {
             event.preventDefault();
             goToPreviousItem();
+        } else if (event.code === 'Enter') {
+            event.preventDefault();
+            resetCounter();
         }
-    });
+    });    
 
     function goToNextItem() {
         if (colIndex < currentParadigm[rowIndex].length - 1) {
