@@ -31,11 +31,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateParadigmItem() {
+        const selectedScript = scriptSelect.value;
         if (rowIndex < currentParadigm.length && colIndex < currentParadigm[rowIndex].length) {
-            paradigmItem.textContent = currentParadigm[rowIndex][colIndex];
-        } else {
-            paradigmItem.textContent = "End of Paradigm";
+            let item = currentParadigm[rowIndex][colIndex];
+            if (rowIndex === currentParadigm.length - 1 && colIndex === currentParadigm[rowIndex].length - 1) {
+                item += ' <span id="resetSymbol">↺</span>';
+            }
+            paradigmItem.innerHTML = item;
+    
+            const resetSymbol = document.getElementById('resetSymbol');
+            if (resetSymbol) {
+                resetSymbol.addEventListener('click', resetCounter);
+            }
         }
+    }
+    
+    function resetCounter() {
+        rowIndex = 0;
+        colIndex = 0;
+        updateParadigmItem();
     }
 
     paradigmSelector.addEventListener('change', () => {
@@ -77,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateParadigmItem();
     }
-
+    
     function goToPreviousItem() {
         if (colIndex > 0) {
             colIndex--;
