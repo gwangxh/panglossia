@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const paradigmSelector = document.getElementById('paradigmSelector');
+    const scriptSelect = document.getElementById('scriptSelect');
     const paradigmItem = document.getElementById('paradigmItem');
     const nextButton = document.getElementById('nextButton');
     const previousButton = document.getElementById('previousButton');
@@ -18,11 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(data => {
             paradigms = data;
-            const selectedParadigm = document.querySelector('input[name="paradigm"]:checked').value;
-            currentParadigm = paradigms[selectedParadigm];
+            updateCurrentParadigm();
             updateParadigmItem();
         })
         .catch(error => console.error('Error loading paradigms:', error));
+
+    function updateCurrentParadigm() {
+        const selectedParadigm = document.querySelector('input[name="paradigm"]:checked').value;
+        const selectedScript = scriptSelect.value;
+        currentParadigm = paradigms[selectedParadigm][selectedScript];
+    }
 
     function updateParadigmItem() {
         if (rowIndex < currentParadigm.length && colIndex < currentParadigm[rowIndex].length) {
@@ -33,10 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     paradigmSelector.addEventListener('change', () => {
-        const selectedParadigm = document.querySelector('input[name="paradigm"]:checked').value;
-        currentParadigm = paradigms[selectedParadigm];
         rowIndex = 0;
         colIndex = 0;
+        updateCurrentParadigm();
+        updateParadigmItem();
+    });
+
+    scriptSelect.addEventListener('change', () => {
+        updateCurrentParadigm();
         updateParadigmItem();
     });
 
@@ -59,16 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function goToNextItem() {
-        colIndex++;
-        if (colIndex >= currentParadigm[rowIndex].length) {
+        if (colIndex < currentParadigm[rowIndex].length - 1) {
+            colIndex++;
+        } else if (rowIndex < currentParadigm.length - 1) {
             colIndex = 0;
             rowIndex++;
         }
-        if (rowIndex < currentParadigm.length) {
-            updateParadigmItem();
-        } else {
-            paradigmItem.textContent = "End of Paradigm";
-        }
+        updateParadigmItem();
     }
 
     function goToPreviousItem() {
@@ -80,4 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateParadigmItem();
     }
+
+    // Initialize with the first item of the default paradigm
+    updateParadigmItem();
 });

@@ -1,62 +1,134 @@
 {
-    "gaja": [
-        ["gajaḥ", "gajau", "gajāḥ"],
-        ["gajam", "gajau", "gajān"],
-        ["gajena", "gajābhyām", "gajaiḥ"],
-        ["gajāya", "gajābhyām", "gajebhyaḥ"],
-        ["gajāt", "gajābhyām", "gajebhyaḥ"],
-        ["gajasya", "gajayoḥ", "gajānām"],
-        ["gaje", "gajayoḥ", "gajeṣu"],
-        ["gaja", "gajau", "gajāḥ"]
-    ],
-    "phala": [
-        ["phalam", "phale", "phalāni"],
-        ["phalam", "phale", "phalāni"],
-        ["phalena", "phalābhyām", "phalaiḥ"],
-        ["phalāya", "phalābhyām", "phalebhyaḥ"],
-        ["phalāt", "phalābhyām", "phalebhyaḥ"],
-        ["phalasya", "phalayoḥ", "phalānām"],
-        ["phale", "phalayoḥ", "phaleṣu"],
-        ["phala", "phale", "phalāni"]
-    ],
-    "senā": [
-        ["senā", "sene", "senāḥ"],
-        ["senām", "sene", "senāḥ"],
-        ["senayā", "senābhyām", "senābhiḥ"],
-        ["senāyai", "senābhyām", "senābhyaḥ"],
-        ["senāyāḥ", "senābhyām", "senābhyaḥ"],
-        ["senāyāḥ", "senayoḥ", "senānām"],
-        ["senāyām", "senayoḥ", "senāsu"],
-        ["sene", "sene", "senāḥ"]
-    ],
-    "muni": [
-        ["muniḥ", "munī", "munayaḥ"],
-        ["munim", "munī", "munīn"],
-        ["muninā", "munibhyām", "munibhiḥ"],
-        ["munaye", "munibhyām", "munibhyaḥ"],
-        ["muneḥ", "munibhyām", "munibhyaḥ"],
-        ["muneḥ", "munyoḥ", "munīnām"],
-        ["munau", "munyoḥ", "muniṣu"],
-        ["mune", "munī", "munayaḥ"]
-    ],
-    "śuci": [
-        ["śuci", "śucinī", "śucīni"],
-        ["śuci", "śucinī", "śucīni"],
-        ["śucinā", "śucibhyām", "śucibhiḥ"],
-        ["śucine", "śucibhyām", "śucibhyaḥ"],
-        ["śucinaḥ", "śucibhyām", "śucibhyaḥ"],
-        ["śucinaḥ", "śucinoḥ", "śucīnām"],
-        ["śucini", "śucinoḥ", "śuciṣu"],
-        ["śuci", "śucinī", "śucīni"]
-    ],
-    "śruti": [
-        ["śrutiḥ", "śrutī", "śrutayaḥ"],
-        ["śrutim", "śrutī", "śrutīḥ"],
-        ["śrutyā", "śrutibhyām", "śrutibhiḥ"],
-        ["śrut-yai/-aye", "śrutibhyām", "śrutibhyaḥ"],
-        ["śrut-yāḥ/-eḥ", "śrutibhyām", "śrutibhyaḥ"],
-        ["śrut-yāḥ/-eḥ", "śrutyoḥ", "śrutīnām"],
-        ["śrut-yām/-au", "śrutyoḥ", "śrutiṣu"],
-        ["śrute", "śrutī", "śrutayaḥ"]
-    ]
+    "gaja": {
+        "IAST": [
+            ["gajaḥ", "gajau", "gajāḥ"],
+            ["gajam", "gajau", "gajān"],
+            ["gajena", "gajābhyām", "gajaiḥ"],
+            ["gajāya", "gajābhyām", "gajebhyaḥ"],
+            ["gajāt", "gajābhyām", "gajebhyaḥ"],
+            ["gajasya", "gajayoḥ", "gajānām"],
+            ["gaje", "gajayoḥ", "gajeṣu"],
+            ["gaja", "gajau", "gajāḥ"]
+        ],
+        "Devanagari": [
+            ["गजः", "गजौ", "गजाः"],
+            ["गजम्", "गजौ", "गजान्"],
+            ["गजेन", "गजाभ्याम्", "गजैः"],
+            ["गजाय", "गजाभ्याम्", "गजेभ्यः"],
+            ["गजात्", "गजाभ्याम्", "गजेभ्यः"],
+            ["गजस्य", "गजयोः", "गजानाम्"],
+            ["गजे", "गजयोः", "गजेषु"],
+            ["गज", "गजौ", "गजाः"]
+        ]
+    },
+    "phala": {
+        "IAST":[
+            ["phalam", "phale", "phalāni"],
+            ["phalam", "phale", "phalāni"],
+            ["phalena", "phalābhyām", "phalaiḥ"],
+            ["phalāya", "phalābhyām", "phalebhyaḥ"],
+            ["phalāt", "phalābhyām", "phalebhyaḥ"],
+            ["phalasya", "phalayoḥ", "phalānām"],
+            ["phale", "phalayoḥ", "phaleṣu"],
+            ["phala", "phale", "phalāni"]
+        ],
+        "Devanagari": [
+            ["फलम्", "फले", "फलानि"],
+            ["फलम्", "फले", "फलानि"],
+            ["फलेन", "फलाभ्याम्", "फलैः"],
+            ["फलाय", "फलाभ्याम्", "फलेभ्यः"],
+            ["फलात्", "फलाभ्याम्", "फलेभ्यः"],
+            ["फलस्य", "फलयोः", "फलानाम्"],
+            ["फले", "फलयोः", "फलेषु"],
+            ["फल", "फले", "फलानि"]
+        ]
+    },
+    "senā": {
+        "IAST":[
+            ["senā", "sene", "senāḥ"],
+            ["senām", "sene", "senāḥ"],
+            ["senayā", "senābhyām", "senābhiḥ"],
+            ["senāyai", "senābhyām", "senābhyaḥ"],
+            ["senāyāḥ", "senābhyām", "senābhyaḥ"],
+            ["senāyāḥ", "senayoḥ", "senānām"],
+            ["senāyām", "senayoḥ", "senāsu"],
+            ["sene", "sene", "senāḥ"]
+        ],
+        "Devanagari": [
+            ["सेना", "सेने", "सेनाः"],
+            ["सेनाम्", "सेने", "सेनाः"],
+            ["सेनया", "सेनाभ्याम्", "सेनाभिः"],
+            ["सेनायै", "सेनाभ्याम्", "सेनाभ्यः"],
+            ["सेनायाः", "सेनाभ्याम्", "सेनाभ्यः"],
+            ["सेनायाः", "सेनयोः", "सेनानाम्"],
+            ["सेनायाम्", "सेनयोः", "सेनासु"],
+            ["सेने", "सेने", "सेनाः"]
+        ]
+    },
+    "muni": {
+        "IAST":[
+            ["muniḥ", "munī", "munayaḥ"],
+            ["munim", "munī", "munīn"],
+            ["muninā", "munibhyām", "munibhiḥ"],
+            ["munaye", "munibhyām", "munibhyaḥ"],
+            ["muneḥ", "munibhyām", "munibhyaḥ"],
+            ["muneḥ", "munyoḥ", "munīnām"],
+            ["munau", "munyoḥ", "muniṣu"],
+            ["mune", "munī", "munayaḥ"]
+        ],
+        "Devanagari": [
+            ["मुनिः", "मुनी", "मुनयः"],
+            ["मुनिम्", "मुनी", "मुनीन्"],
+            ["मुनिना", "मुनिभ्याम्", "मुनिभिः"],
+            ["मुनये", "मुनिभ्याम्", "मुनिभ्यः"],
+            ["मुनेः", "मुनिभ्याम्", "मुनिभ्यः"],
+            ["मुनेः", "मुन्योः", "मुनीनाम्"],
+            ["मुनौ", "मुन्योः", "मुनिषु"],
+            ["मुने", "मुनी", "मुनयः"]
+        ]
+    },
+    "śuci": {
+        "IAST":[
+            ["śuci", "śucinī", "śucīni"],
+            ["śuci", "śucinī", "śucīni"],
+            ["śucinā", "śucibhyām", "śucibhiḥ"],
+            ["śucine", "śucibhyām", "śucibhyaḥ"],
+            ["śucinaḥ", "śucibhyām", "śucibhyaḥ"],
+            ["śucinaḥ", "śucinoḥ", "śucīnām"],
+            ["śucini", "śucinoḥ", "śuciṣu"],
+            ["śuci", "śucinī", "śucīni"]
+        ],
+        "Devanagari": [
+            ["शुचि", "शुचिनी", "शुचीनि"],
+            ["शुचि", "शुचिनी", "शुचीनि"],
+            ["शुचिना", "शुचिभ्याम्", "शुचिभिः"],
+            ["शुचिने", "शुचिभ्याम्", "शुचिभ्यः"],
+            ["शुचिनः", "शुचिभ्याम्", "शुचिभ्यः"],
+            ["शुचिनः", "शुचिनोः", "शुचीनाम्"],
+            ["शुचिनि", "शुचिनोः", "शुचिषु"],
+            ["शुचि", "शुचिनी", "शुचीनि"]
+        ]
+    },
+    "śruti": {
+        "IAST":[
+            ["śrutiḥ", "śrutī", "śrutayaḥ"],
+            ["śrutim", "śrutī", "śrutīḥ"],
+            ["śrutyā", "śrutibhyām", "śrutibhiḥ"],
+            ["śrut-yai/-aye", "śrutibhyām", "śrutibhyaḥ"],
+            ["śrut-yāḥ/-eḥ", "śrutibhyām", "śrutibhyaḥ"],
+            ["śrut-yāḥ/-eḥ", "śrutyoḥ", "śrutīnām"],
+            ["śrut-yām/-au", "śrutyoḥ", "śrutiṣu"],
+            ["śrute", "śrutī", "śrutayaḥ"]
+        ],
+        "Devanagari": [
+            ["श्रुतिः", "श्रुती", "श्रुतयः"],
+            ["श्रुतिम्", "श्रुती", "श्रुतीः"],
+            ["श्रुत्या", "श्रुतिभ्याम्", "श्रुतिभिः"],
+            ["श्रुत्-यै/-ये", "श्रुतिभ्याम्", "श्रुतिभ्यः"],
+            ["श्रुत्-याः/-ेः", "श्रुतिभ्याम्", "श्रुतिभ्यः"],
+            ["श्रुत्-याः/-ेः", "श्रुत्योः", "श्रुतीनाम्"],
+            ["श्रुत्-याम्/-ौ", "श्रुत्योः", "श्रुतिषु"],
+            ["श्रुते", "श्रुती", "श्रुतयः"]
+        ]
+    }
 }
