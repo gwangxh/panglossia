@@ -439,6 +439,116 @@
             ["स्वसर्", "स्वसारौ", "स्वसारः"]
         ]
     },
+    "mātṛ": {
+        "IAST":[
+            ["mātā", "mātarau", "mātaraḥ"],
+            ["mātaram", "mātarau", "mātṝḥ"],
+            ["mātrā", "mātṛbhyām", "mātṛbhiḥ"],
+            ["mātre", "mātṛbhyām", "mātṛbhyaḥ"],
+            ["mātuḥ", "mātṛbhyām", "mātṛbhyaḥ"],
+            ["mātuḥ", "mātroḥ", "mātṝṇām"],
+            ["mātari", "mātroḥ", "mātṛṣu"],
+            ["mātar", "mātarau", "mātaraḥ"]
+        ],
+        "Devanagari": [
+            ["माता", "मातरौ", "मातरः"],
+            ["मातरम्", "मातरौ", "मातॄः"],
+            ["मात्रा", "मातृभ्याम्", "मातृभिः"],
+            ["मात्रे", "मातृभ्याम्", "मातृभ्यः"],
+            ["मातुः", "मातृभ्याम्", "मातृभ्यः"],
+            ["मातुः", "मात्रोः", "मातॄणाम्"],
+            ["मातरि", "मात्रोः", "मातृषु"],
+            ["मातर्", "मातरौ", "मातरः"]
+        ]
+    },
+    "bhagavat-M": {
+        "IAST":[
+            ["bhagavān", "bhagavantau", "bhagavantaḥ"],
+            ["bhagavantam", "bhagavantau", "bhagavataḥ"],
+            ["bhagavatā", "bhagavadbhyām", "bhagavadbhiḥ"],
+            ["bhagavate", "bhagavadbhyām", "bhagavadbhyaḥ"],
+            ["bhagavataḥ", "bhagavadbhyām", "bhagavadbhyaḥ"],
+            ["bhagavataḥ", "bhagavatoḥ", "bhagavatām"],
+            ["bhagavati", "bhagavatoḥ", "bhagavatsu"],
+            ["bhagavan", "bhagavantau", "bhagavantaḥ"]
+        ],
+        "Devanagari": [
+            ["भगवान्", "भगवन्तौ", "भगवन्तः"],
+            ["भगवन्तम्", "भगवन्तौ", "भगवतः"],
+            ["भगवता", "भगवद्भ्याम्", "भगवद्भिः"],
+            ["भगवते", "भगवद्भ्याम्", "भगवद्भ्यः"],
+            ["भगवतः", "भगवद्भ्याम्", "भगवद्भ्यः"],
+            ["भगवतः", "भगवतोः", "भगवताम्"],
+            ["भगवति", "भगवतोः", "भगवत्सु"],
+            ["भगवन्", "भगवन्तौ", "भगवन्तः"]
+        ]
+    },
+    "bhagavat-N": {
+        "IAST":[
+            ["bhagavat", "bhagavatī", "bhagavanti"],
+            ["bhagavat", "bhagavatī", "bhagavanti"],
+            ["bhagavatā", "bhagavadbhyām", "bhagavadbhiḥ"],
+            ["bhagavate", "bhagavadbhyām", "bhagavadbhyaḥ"],
+            ["bhagavataḥ", "bhagavadbhyām", "bhagavadbhyaḥ"],
+            ["bhagavataḥ", "bhagavatoḥ", "bhagavatām"],
+            ["bhagavati", "bhagavatoḥ", "bhagavatsu"],
+            ["bhagavat", "bhagavatī", "bhagavanti"]
+        ],
+        "Devanagari": [
+            ["भगवत्", "भगवती", "भगवन्ति"],
+            ["भगवत्", "भगवती", "भगवन्ति"],
+            ["भगवता", "भगवद्भ्याम्", "भगवद्भिः"],
+            ["भगवते", "भगवद्भ्याम्", "भगवद्भ्यः"],
+            ["भगवतः", "भगवद्भ्याम्", "भगवद्भ्यः"],
+            ["भगवतः", "भगवतोः", "भगवताम्"],
+            ["भगवति", "भगवतोः", "भगवत्सु"],
+            ["भगवत्", "भगवती", "भगवन्ति"]
+        ]
+    },
+    "sumanas": {
+        "IAST":[
+            ["sumanāḥ", "sumanasau", "sumanasaḥ"],
+            ["sumanasam", "sumanasau", "sumanasaḥ"],
+            ["sumanasā", "sumanobhyām", "sumanobhiḥ"],
+            ["sumanase", "sumanobhyām", "sumanobhyaḥ"],
+            ["sumanasaḥ", "sumanobhyām", "sumanobhyaḥ"],
+            ["sumanasaḥ", "sumanasoḥ", "sumanasām"],
+            ["sumanasi", "sumanasoḥ", "sumanaḥsu"],
+            ["sumanaḥ", "sumanasau", "sumanasaḥ"]
+        ],
+        "Devanagari": [
+            ["सुमनाः", "सुमनसौ", "सुमनसः"],
+            ["सुमनसम्", "सुमनसौ", "सुमनसः"],
+            ["सुमनसा", "सुमनोभ्याम्", "सुमनोभिः"],
+            ["सुमनसे", "सुमनोभ्याम्", "सुमनोभ्यः"],
+            ["सुमनसः", "सुमनोभ्याम्", "सुमनोभ्यः"],
+            ["सुमनसः", "सुमनसोः", "सुमनसाम्"],
+            ["सुमनसि", "सुमनसोः", "सुमनःसु"],
+            ["सुमनः", "सुमनसौ", "सुमनसः"]
+        ]
+    },
+    "manas": {
+        "IAST":[
+            ["manaḥ", "manasī", "manāṃsi"],
+            ["manaḥ", "manasī", "manāṃsi"],
+            ["manasā", "manobhyām", "manobhiḥ"],
+            ["manase", "manobhyām", "manobhyaḥ"],
+            ["manasaḥ", "manobhyām", "manobhyaḥ"],
+            ["manasaḥ", "manasoḥ", "manasām"],
+            ["manasi", "manasoḥ", "manaḥsu"],
+            ["manaḥ", "manasī", "manāṃsi"]
+        ],
+        "Devanagari": [
+            ["मनः", "मनसी", "मनांसि"],
+            ["मनः", "मनसी", "मनांसि"],
+            ["मनसा", "मनोभ्याम्", "मनोभिः"],
+            ["मनसे", "मनोभ्याम्", "मनोभ्यः"],
+            ["मनसः", "मनोभ्याम्", "मनोभ्यः"],
+            ["मनसः", "मनसोः", "मनसाम्"],
+            ["मनसि", "मनसोः", "मनःसु"],
+            ["मनः", "मनसी", "मनांसि"]
+        ]
+    },
     "nī-P": {
         "IAST":[
             ["nayati", "nayataḥ", "nayanti"],
