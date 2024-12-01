@@ -1,18 +1,68 @@
 document.getElementById('processButton').addEventListener('click', processText);
 document.getElementById('finalizeButton').addEventListener('click', finalizeText);
 
+// Utility function to split text into smaller chunks based on sentence boundaries and a character limit
+function splitIntoSentences(text) {
+    return text.match(/[^.!?]+[.!?](?:"|')?/g) || [text];
+}
+
+function splitBySentencesWithLimit(text, limit) {
+    const sentences = splitIntoSentences(text);
+    const chunks = [];
+    let currentChunk = '';
+
+    sentences.forEach(sentence => {
+        if ((currentChunk + sentence).length > limit) {
+            chunks.push(currentChunk.trim());
+            currentChunk = sentence;
+        } else {
+            currentChunk += ' ' + sentence;
+        }
+    });
+
+    if (currentChunk.trim()) {
+        chunks.push(currentChunk.trim());
+    }
+
+    return chunks;
+}
+
 function processText() {
-    const input1 = document.getElementById('input1').value.trim();
-    const input2 = document.getElementById('input2').value.trim();
-    const input3 = document.getElementById('input3').value.trim();
+    let input1 = document.getElementById('input1').value.trim();
+    let input2 = document.getElementById('input2').value.trim();
+    let input3 = document.getElementById('input3').value.trim();
 
     if (!input1 || !input2 || !input3) {
         alert('Please fill in all three text inputs.');
         return;
     }
 
-    const chunks = getChunks(input1, input2, input3);
-    renderChunks(chunks);
+    // Define a character limit for each chunk
+    const charLimit = 500;
+
+    // Pre-split the inputs into smaller chunks
+    const chunks1 = splitBySentencesWithLimit(input1, charLimit);
+    const chunks2 = splitBySentencesWithLimit(input2, charLimit);
+    const chunks3 = splitBySentencesWithLimit(input3, charLimit);
+
+    // Ensure all inputs have the same number of chunks (pad with empty strings if necessary)
+    const maxChunks = Math.max(chunks1.length, chunks2.length, chunks3.length);
+    while (chunks1.length < maxChunks) chunks1.push('');
+    while (chunks2.length < maxChunks) chunks2.push('');
+    while (chunks3.length < maxChunks) chunks3.push('');
+
+    const allChunks = [];
+    for (let i = 0; i < maxChunks; i++) {
+        const chunk1 = chunks1[i];
+        const chunk2 = chunks2[i];
+        const chunk3 = chunks3[i];
+
+        // Process each chunk with LCS
+        const chunks = getChunks(chunk1, chunk2, chunk3);
+        allChunks.push(...chunks);
+    }
+
+    renderChunks(allChunks);
 }
 
 function getChunks(text1, text2, text3) {
@@ -112,9 +162,16 @@ function renderChunks(chunks) {
     finalizeButton.style.display = 'block';
 
     chunks.forEach((chunk, index) => {
-        const chunkSpan = document.createElement('div');
-        chunkSpan.classList.add('chunk', chunk.type);
-        chunkSpan.textContent = chunk.text;
+        const chunkContainer = document.createElement('div');
+        chunkContainer.classList.add('chunk', chunk.type);
+        chunkContainer.id = `chunk-${index}`;
+
+        // Display the selected text area
+        const selectedText = document.createElement('div');
+        selectedText.classList.add('selected-text');
+        selectedText.textContent = chunk.text; // Default to initial chunk text
+        selectedText.style.marginBottom = '10px'; // Add spacing
+        chunkContainer.appendChild(selectedText);
 
         // For 'b' or 'c' chunks, show clickable options
         if (chunk.type === 'b' || chunk.type === 'c') {
@@ -130,20 +187,25 @@ function renderChunks(chunks) {
 
                 // Add click event to select this option
                 optionButton.addEventListener('click', () => {
+                    // Remove previous selection
                     document
                         .querySelectorAll(`#options-container-${index} .variant-option`)
-                        .forEach((btn) => btn.classList.remove('selected')); // Remove previous selection
-                    optionButton.classList.add('selected'); // Highlight this option
-                    optionButton.dataset.selected = true; // Mark as selected
+                        .forEach((btn) => btn.classList.remove('selected'));
+
+                    // Highlight this option
+                    optionButton.classList.add('selected');
+
+                    // Update the selected text display
+                    selectedText.textContent = optionButton.textContent.trim();
                 });
 
                 optionsContainer.appendChild(optionButton);
             });
 
-            chunkSpan.appendChild(optionsContainer);
+            chunkContainer.appendChild(optionsContainer);
         }
 
-        outputDiv.appendChild(chunkSpan);
+        outputDiv.appendChild(chunkContainer);
     });
 
     // Store chunks for finalization
@@ -154,20 +216,33 @@ function finalizeText() {
     const outputDiv = document.getElementById('output');
     const chunks = JSON.parse(outputDiv.dataset.chunks);
 
+    // Process each chunk and form the final text
     const finalText = chunks.map((chunk, index) => {
         if (chunk.type === 'a') {
+            // For identical chunks, use their text after trimming
             return chunk.text.trim();
         } else if (chunk.type === 'b' || chunk.type === 'c') {
+            // Get the selected option for differing chunks
             const selectedOption = document.querySelector(
                 `#options-container-${index} .variant-option.selected`
             );
+
+            // If a selection is made, use its text; otherwise, return an empty string
             return selectedOption ? selectedOption.textContent.trim() : '';
         }
-        return '';
+        return ''; // Fallback for unexpected cases
     });
 
-    // Join the text with a single space between chunks
-    const cleanedText = finalText.filter((chunk) => chunk).join(' ');
+    // Join the chunks while avoiding redundant spaces
+    const cleanedText = finalText
+        .filter((chunk) => chunk) // Remove empty chunks
+        .join(' ') // Join with a single space
+        .replace(/\s+([.,!?;:])/g, '$1') // Remove extra spaces before punctuation
+        .replace(/([.!?;:])\s*"/g, '$1"') // Ensure no space between punctuation and closing quotation
+        .replace(/"\s+/g, '" ') // Ensure a single space after a closing quotation
+        .replace(/([^\S\r\n]{2,})/g, ' '); // Collapse multiple spaces into one, preserving line breaks
+
+    // Display the final cleaned text
     const finalTextDiv = document.getElementById('finalText');
     finalTextDiv.textContent = cleanedText;
 }
